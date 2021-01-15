@@ -182,15 +182,15 @@
 
         <!-- Project 1 -->
         <div class="col-lg-6">
-          <a class="portfolio-item" href="http://twitter.com">
+          <div class="portfolio-item" data-toggle="modal" data-target="#portfolioModal1">
             <div class="caption">
               <div class="caption-content">
                   <div class="h2">Project 1</div>
                 <p class="mb-0">Summary project 1</p>
               </div>
             </div>
-              <img class="img-fluid" href="http://twitter.com" src="img/portfolio-1.jpg" alt="">
-            </a>
+              <img class="img-fluid" src="img/portfolio-1.jpg" alt="" />
+            </div>
         </div>
 
         <!-- Project 2 -->
@@ -342,6 +342,44 @@
   <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
+
+  <!-- Portfolio Modal 1 Pop out-->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+          <div class="modal-content">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fas fa-times"></i></span>
+              </button>
+              <div class="modal-body text-center">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                          <div class="col-lg-8">
+                              <!-- Portfolio Modal - Title-->
+                              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Project 1: ML/NN</h2>
+                              <!-- Icon Divider-->
+                              <div class="divider-custom">
+                                  <div class="divider-custom-line"></div>
+                                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                  <div class="divider-custom-line"></div>
+                              </div>
+                              <!-- Portfolio Modal - Image-->
+                              <img class="img-fluid rounded mb-5" src="project/project1.txt" alt="" />
+                              <!-- Portfolio Modal - Text-->
+                              <p class="mb-5">This is the content of the page.</p>
+                              <button class="btn btn-primary" data-dismiss="modal">
+                                  <i class="fas fa-times fa-fw"></i>
+                                  Close Window
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
